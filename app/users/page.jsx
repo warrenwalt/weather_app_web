@@ -6,10 +6,6 @@ const UsersPage = async () => {
     cache: "no-store",
   });
   const users = await res.json();
-
-  if (users.length < 15) {
-    throw "users less than 15";
-  }
   return (
     <>
       <div>UsersPage</div>
