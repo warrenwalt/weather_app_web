@@ -3,8 +3,11 @@ import React from "react";
 const layout = ({ children }) => {
   return (
     <>
-      <div>layout for the entire post routes (and its sub-routes)</div>
       {children}
+      <footer className="bg-orange-400">
+        <p>layout from shop</p>
+        <p>layout from shop</p>
+      </footer>
     </>
   );
 };
