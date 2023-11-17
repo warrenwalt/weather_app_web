@@ -1,5 +1,5 @@
 import ProductCard from "@/app/components/ProductCard";
-import React, { useState } from "react";
+import React from "react";
 
 const layout = ({ children }) => {
   return (

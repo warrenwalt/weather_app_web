@@ -1,10 +1,11 @@
+/* eslint-disable @next/next/no-async-client-component */
 "use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
-const layout = async ({ children }) => {
+const Layout = async ({ children }) => {
   const pathName = usePathname();
   const response = await fetch("https://jsonplaceholder.typicode.com/users");
   const categories = await response.json();
@@ -31,4 +32,4 @@ const layout = async ({ children }) => {
   );
 };
 
-export default layout;
+export default Layout;
