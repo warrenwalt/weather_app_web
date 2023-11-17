@@ -1,5 +1,3 @@
-"use server";
-
 import LocationCard from "@/app/components/LocationCard";
 import React, { Suspense } from "react";
 
