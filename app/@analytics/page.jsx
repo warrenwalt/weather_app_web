@@ -1,12 +1,21 @@
 import React from "react";
 
-const page = () => {
-  // throw "sth went wrong from analytics";
+export const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+const Page = async () => {
+  await delay(3000);
+
+  if (Math.random() < 0.5) {
+    throw new Error("Oops! Something went wrong.");
+  }
+
+  console.log("done");
+
   return (
-    <div className="border-2 border-black rounded-lg p-2">
-      <h1>My analytics</h1>
+    <div className="font-bold border-2 border-black p-10">
+      <h1>Analytics page</h1>
     </div>
   );
 };
 
-export default page;
+export default Page;

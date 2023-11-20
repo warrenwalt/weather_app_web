@@ -1,13 +1,24 @@
 "use client";
 import React from "react";
 
-const Error = () => {
+const Error = ({ error, reset }) => {
   return (
-    <div className="p-2 border-2 border-black rounded-lg">
-      <h1>somehting went wrong(analytics)</h1>
-      <button className="rounded-lg bg-red-600 text-white px-3 py-1">
-        Try again?
-      </button>
+    <div>
+      <h1 className="font-extrabold text-3xl text-red-500">
+        An error occured!
+      </h1>
+      {/* <p className="font-bold">{error}</p> */}
+      <div className="flex">
+        <p>
+          please{" "}
+          <button
+            onClick={reset}
+            className="px-3 py-2 bg-gray-500 rounded-2xl text-white"
+          >
+            try again
+          </button>
+        </p>
+      </div>
     </div>
   );
 };

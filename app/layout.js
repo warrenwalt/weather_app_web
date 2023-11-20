@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
+import CheckParallelLayout from './components/CheckParallelLayout'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +18,7 @@ export default function RootLayout(props) {
         {props.team}
         {props.analytics}
         </div>
+        <CheckParallelLayout />
         <footer>@2023 copyright <p>all rights reserved</p></footer>
       </body>
     </html>
