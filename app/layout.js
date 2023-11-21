@@ -11,15 +11,14 @@ export const metadata = {
 }
 
 export default function RootLayout(props) {
-  console.log(props, '🆒')
+  // console.log(props, '🆒')
   return (
     <html lang="en">
       <body className={inter.className}>
         {props.children}
-        {props.modal}
+        {/* {props.modal} */}
         <div className='flex space-x-4 justify-center'>
-        {props.team}
-        {props.analytics}
+        blah blah blah
         </div>
         <CheckParallelLayout />
         <footer className='flex border-2 border-black rounded-3xl justify-center space-x-4'><p>@2023 copyright</p> <p>all rights reserved</p></footer>
