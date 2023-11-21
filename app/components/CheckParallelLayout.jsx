@@ -6,7 +6,7 @@ import React from "react";
 const CheckParallelLayout = () => {
   const segment = useSelectedLayoutSegment("analytics");
   console.log(segment, "😎");
-  return <div>CheckParallelLayout</div>;
+  return;
 };
 
 export default CheckParallelLayout;

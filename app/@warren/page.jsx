@@ -3,7 +3,7 @@ import React from "react";
 const Page = () => {
   return (
     <div>
-      <h1>Campus</h1>
+      <h1>Warren parallel route🌡️</h1>
     </div>
   );
 };
