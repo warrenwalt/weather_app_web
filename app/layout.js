@@ -16,10 +16,10 @@ export default function RootLayout(props) {
     <html lang="en">
       <body className={inter.className}>
         {props.children}
-        {props.modal}
+        {props.modal || 'no modal'}
         <div className='flex space-x-4 justify-center'>
-        {props.team}
-        {props.analytics}
+        {/* {props.team || 'no team'} */}
+        {/* {props.analytics || 'no analytics'} */}
         </div>
         <CheckParallelLayout />
         <footer className='flex border-2 border-black rounded-3xl justify-center space-x-4'><p>@2023 copyright</p> <p>all rights reserved</p></footer>

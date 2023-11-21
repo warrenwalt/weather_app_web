@@ -6,6 +6,7 @@ export default async function Home() {
       cache: 'no-store',
     });
   const data = await response.json();
+  console.log(data);
     return (
       <main className="container mx-auto">
         <h1 className="text-center font-bold text-4xl">Some random photos</h1>
@@ -15,12 +16,12 @@ export default async function Home() {
             <Link href={`/photos/${image.id}`} key={image.id}>
               <Image
                 src={image.urls.regular}
-                alt=""
+                alt={image.alt_description}
                 height={300}
                 width={300}
                 className="w-full object-cover aspect-square"
               />
-              <p>{image.alt_description}</p>
+              <p>{image.description || image.alt_description}</p>
           </Link>
           ))}
         </div>
