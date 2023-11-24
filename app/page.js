@@ -6,7 +6,6 @@ export default async function Home() {
       cache: 'no-store',
     });
   const data = await response.json();
-  console.log(data);
     return (
       <main className="container mx-auto">
         <h1 className="text-center font-bold text-4xl">Some random photos</h1>

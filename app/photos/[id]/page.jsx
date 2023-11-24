@@ -6,7 +6,6 @@ const Page = async ({ params }) => {
     `https://api.unsplash.com/photos/${params.id}?client_id=mW58lcHw43G-HZXp_J2iKVQbqK4lxYQq_1agi2LHiw8`
   );
   const anImage = await response.json();
-  console.log("🔥", anImage);
   return (
     <div>
       <h1 className="font-bold text-2xl text-green-300">the original page!</h1>
